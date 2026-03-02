@@ -34,11 +34,12 @@ body {
   font-family: 'JetBrainsMono', monospace;
   color: $color-text ;
   font-weight: 500;
-  position: fixed;
+   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999; /* importante */
+  z-index: 9999; /* siempre encima de todo */
+  pointer-events: auto; /* asegura que el botón reciba clics */
  
   
 
