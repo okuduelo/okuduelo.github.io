@@ -30,8 +30,42 @@ body {
 
 }
 
+.soundbutton {
+  font-family: 'JetBrainsMono', monospace;
+  color: $color-text ;
+  font-weight: 500;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+
+  padding: 0px 5px;
+     background-color: black;
+     border: none;
+     line-height: 0.9rem;
+
+
+  font-size: 1rem;
+
+        
+ 
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-text;
+  }
+}
+
 .portfolio {
   margin: 0.5rem;
+}
+
+.portfolio {
+  margin: 0.5rem;
+
+  
 
 
 }

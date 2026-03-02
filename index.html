@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#fafafa" />
 
-   <title>OKU</title>
+    <title>OKU</title>
 
     <meta name="description" content="" />
     <link rel="apple-touch-icon" href="./assets/img/icon.png" />
@@ -20,8 +20,35 @@
 </head>
 
 <body>
+    <audio id="musica" loop>
+        <source src="./assets/img/work/oku/spotdown.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="soundButton" class="soundbutton">TURN SOUND ON</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const button = document.getElementById("soundButton");
+            const audio = document.getElementById("musica");
+
+            button.addEventListener("click", function () {
+                audio.play().then(() => {
+                    console.log("Audio iniciado");
+                    button.remove();
+                }).catch(error => {
+                    console.log("Error al reproducir:", error);
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+
     <div class="portfolio">
-    
+
         <div class="grid_projects">
             <div class="project">
                 <div class="project_info">
@@ -34,21 +61,20 @@
                     <div class="part2">
 
                         <div class="project_desc">
-                            <p class="language">ENG</p>
+                            <p class="language">DESCRICIÓN</p>
                             <p>
-                                OKU is a space that supports the grieving process. Its
-                                visual identity, inspired by the constructivist theory of grief, conceives it as a
-                                flexible and ever-evolving journey, oscillating between emptiness and reconstruction.
-                                The logo expands to create voids that hold text and images, a metaphor for how life is
-                                rebuilt after loss. The project unfolds across an editorial piece, a web prototype, and
-                                graphic applications, shaping a dynamic and sensitive visual language that seeks to
-                                represent the emotions of those in mourning.</p>
+                                OKU es un espacio que acompaña a personas en duelo. Su identidad visual, inspirada en la
+                                teoría constructivista del duelo, lo concibe como un proceso flexible y en constante
+                                transformación, que oscila entre el vacío y la reconstrucción. El logo se expande
+                                creando vacíos que albergan textos e imágenes, metáfora de cómo reconstruimos la vida
+                                tras una pérdida. La propuesta se despliega en un editorial y aplicaciones gráficas,
+                                conformando un lenguaje dinámico y sensible, que busca representar gráficamente las
+                                emociones del doliente.</p>
                         </div>
-                     
+
                     </div>
 
                 </div>
-
 
 
 
@@ -70,11 +96,11 @@
 
                 <div class="wrapper">
 
-                  
+
                     <div>
                         <img src="/assets/img/work/oku/poster_verde.png" alt="">
                     </div>
-                      <div>
+                    <div>
                         <img src="/assets/img/work/oku/cartel-pantalla.gif" alt="">
                     </div>
                     <div>
@@ -84,9 +110,20 @@
                 </div>
 
 
+                <div class="wrapper">
+                    <video id="autoVideo" width="100%" height="auto" autoplay muted loop playsinline>
+                        <source src="/assets/img/work/oku/behaviour.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
 
 
-
+                <div class="wrapper">
+                    <video id="autoVideo" width="100%" height="auto" autoplay muted loop playsinline>
+                        <source src="/assets/img/work/oku/images.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
 
 
                 <div class="wrapper">
@@ -94,6 +131,13 @@
                         <img src="/assets/img/work/oku/both.png" alt="">
                     </div>
 
+                </div>
+
+                <div class="wrapper">
+                    <video id="autoVideo" width="100%" height="auto" autoplay muted loop playsinline>
+                        <source src="/assets/img/work/oku/sendas.mov" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
                 </div>
 
 
@@ -114,12 +158,37 @@
 
                 <div class="wrapper">
                     <div>
-                        <img src="/assets/img/work/oku/book.png" alt="">
+                        <img src="/assets/img/work/oku/book.jpg" alt="">
                     </div>
                 </div>
 
+                <div class="wrapper">
+                    <video id="autoVideo" width="100%" height="auto" autoplay muted loop playsinline>
+                        <source src="/assets/img/work/oku/valores.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                   
+                </div>
 
-                 <div class="wrapper">
+                <div class="wrapper">
+                    <div>
+                        <img src="/assets/img/work/oku/espectro.jpg" alt="">
+                    </div>
+
+                </div>
+
+          
+
+
+                <div class="wrapper">
+                    <video id="autoVideo" width="100%" height="auto" autoplay muted loop playsinline>
+                        <source src="/assets/img/work/oku/oku_video_laus2.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+
+                </div>
+
+
+                <div class="wrapper">
                     <video id="autoVideo" width="100%" height="auto" autoplay muted loop playsinline>
                         <source src="/assets/img/work/oku/long.mp4" type="video/mp4">
                         Tu navegador no soporta el elemento de video.
@@ -140,12 +209,13 @@
 
 
 
-               
 
 
-              
+
+
 
             </div>
         </div>
 
-</html>
+
+</body>

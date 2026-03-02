@@ -3556,6 +3556,30 @@ body {
   margin-left: 0px;
 }
 
+.soundbutton {
+  font-family: "JetBrainsMono", monospace;
+  color: #838383;
+  font-weight: 500;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  padding: 0px 5px;
+  background-color: black;
+  border: none;
+  line-height: 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.soundbutton:hover {
+  background-color: #D1D1D1;
+  color: #838383;
+}
+
+.portfolio {
+  margin: 0.5rem;
+}
+
 .portfolio {
   margin: 0.5rem;
 }
