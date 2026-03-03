@@ -3567,16 +3567,17 @@ body {
   z-index: 9999; /* siempre encima de todo */
   pointer-events: auto; /* asegura que el botón reciba clics */
   padding: 0px 5px;
-  background-color: black;
   border: none;
   line-height: 0.9rem;
   font-size: 1rem;
+  background-color: #D1D1D1;
+  color: #838383;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .soundbutton:hover {
-  background-color: #D1D1D1;
   color: #838383;
+  background-color: black;
 }
 
 .portfolio {
